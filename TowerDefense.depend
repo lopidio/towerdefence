@@ -354,12 +354,12 @@
 
 1339389760 c:\users\guilherme m\documents\projetos\c++\towerdefense\machine\gamestate.h
 
-1341541014 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\machine\maingamestate.cpp
+1341544339 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\machine\maingamestate.cpp
 	"MainGameState.h"
 	"../actor/Unit.h"
 	"../actor/Artefact.h"
 
-1341534977 c:\users\guilherme m\documents\projetos\c++\towerdefense\machine\maingamestate.h
+1341547243 c:\users\guilherme m\documents\projetos\c++\towerdefense\machine\maingamestate.h
 	<SFML/Graphics.hpp>
 	<list>
 	"GameState.h"
@@ -368,7 +368,7 @@
 	"../manager/GridCollisionManager.h"
 	"../control/TimeMaster.h"
 	"../control/PathFinder.h"
-	"../factory/ArtefactBuilder.h"
+	"../factory/ArtefactFactory.h"
 
 1339389778 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\control\timemaster.cpp
 	"TimeMaster.h"
@@ -492,7 +492,7 @@
 1339679498 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\util\util.cpp
 	"Util.h"
 
-1341532449 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\actor\artefact.cpp
+1341544926 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\actor\artefact.cpp
 	"Artefact.h"
 	"../machine/MainGameState.h"
 	"../factory/BulletFactory.h"
@@ -510,7 +510,7 @@
 	"Unit.h"
 	<string>
 
-1341458326 c:\users\guilherme m\documents\projetos\c++\towerdefense\factory\bulletfactory.h
+1341546023 c:\users\guilherme m\documents\projetos\c++\towerdefense\factory\bulletfactory.h
 	<map>
 	"../actor/bullet/Bullet.h"
 
@@ -534,13 +534,24 @@
 1341463904 c:\users\guilherme m\documents\projetos\c++\towerdefense\actor\bullet\instantbullet.h
 	"Bullet.h"
 
-1341541500 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\factory\artefactbuilder.cpp
+1341544324 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\factory\artefactbuilder.cpp
 	"ArtefactBuilder.h"
 	<SFML/Graphics.hpp>
 	"../control/Board.h"
 	"../machine/MainGameState.h"
 	<stdio.h>
 
-1341538063 c:\users\guilherme m\documents\projetos\c++\towerdefense\factory\artefactbuilder.h
+1341546937 c:\users\guilherme m\documents\projetos\c++\towerdefense\factory\artefactbuilder.h
 	"../actor/Artefact.h"
+
+1341547136 c:\users\guilherme m\documents\projetos\c++\towerdefense\factory\artefactfactory.h
+	"../actor/Artefact.h"
+	<map>
+
+1341547157 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\factory\artefactfactory.cpp
+	"ArtefactFactory.h"
+	<SFML/Graphics.hpp>
+	"../control/Board.h"
+	"../machine/MainGameState.h"
+	<stdio.h>
 

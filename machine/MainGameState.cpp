@@ -18,7 +18,7 @@ namespace machine
                 pathFinder(),
                 tileSize(32),
                 board(16,20), //Linhas, colunas
-                artefactBuilder()
+                artefactFactory()
         {
         }
 
@@ -47,7 +47,7 @@ namespace machine
                         (*it)->draw();
 
 #ifdef DEBUG_DRAW
-                artefactBuilder.draw();
+                artefactFactory.draw();
 #endif
 
                 //desenhar a GUI
@@ -65,7 +65,7 @@ namespace machine
                 if (deltaTime >= 0.2)//Dar valores máximos
                         deltaTime = 0.2;
 
-                artefactBuilder.update();
+                artefactFactory.update();
                 for (GameActorList::iterator it = gameActorList.begin(); it != gameActorList.end(); ++it)
                 {
                         (*it)->update(deltaTime);
@@ -194,7 +194,7 @@ namespace machine
 
                 actor::Artefact::ArtefactDefinition* artDef = new actor::Artefact::ArtefactDefinition();
                 artDef->ray = 38;
-                artefactBuilder.setArtefactDefinition(artDef);
+                artefactFactory.setArtefactDefinition(artDef);
         }
 
         /** @brief GetGlobalAccess
@@ -240,7 +240,7 @@ namespace machine
         {
                 return GetGlobalAccess()->collisionManager;
         }
-        void MainGameState::addGameActor(actor::GameActor* gameActor)
+        void MainGameState::AddGameActor(actor::GameActor* gameActor)
         {
                 globalInstance->gameActorList.push_back(gameActor);
         }

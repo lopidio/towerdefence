@@ -67,7 +67,8 @@ namespace actor
                                 Unit* unit = static_cast<Unit*>(&target);
                                 bullet::Bullet* newbullet = factory::BulletFactory::Factory(bulletId, unit, collisionCircle.getCenter());
                                 newbullet->init();
-                                machine::MainGameState::addGameActor(newbullet);
+                                newbullet->load();
+                                machine::MainGameState::AddGameActor(newbullet);
 
                                 shooting = true;
                                 currentAnimationIndex = EArtefactAnimationShooting;

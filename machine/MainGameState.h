@@ -9,7 +9,7 @@
 #include "../manager/GridCollisionManager.h"
 #include "../control/TimeMaster.h"
 #include "../control/PathFinder.h"
-#include "../factory/ArtefactBuilder.h"
+#include "../factory/ArtefactFactory.h"
 
 using namespace sf;
 
@@ -33,7 +33,7 @@ namespace machine
                         static sf::Vector2i TransformToTilePosition(const sf::Vector2f& position);
                         static sf::Vector2i TransformTileToBoardPosition(const sf::Vector2f& position);
                         static manager::GridCollisionManager& GridCollisionManager();
-                        static void addGameActor(actor::GameActor* gameActor);
+                        static void AddGameActor(actor::GameActor* gameActor);
                         static control::Board& GetBoard();
                 protected:
                         void removeDeadGameActor();
@@ -44,7 +44,7 @@ namespace machine
                         control::PathFinder pathFinder;
                         int tileSize;
                         control::Board board;
-                        factory::ArtefactBuilder artefactBuilder;
+                        factory::ArtefactFactory artefactFactory;
         };
 
 }
