@@ -13,7 +13,10 @@ using namespace actor;
 namespace factory
 {
 
-        ArtefactFactory::ArtefactFactory():artefactDefinitionSelected(NULL)
+        ArtefactFactory::ArtefactFactory():
+                isSomeSelected(false),
+                artefactDefinitionIdSelected(0),
+                artefactDefinitionSelected(NULL)
         {
                 //ctor
         }
@@ -26,7 +29,7 @@ namespace factory
         void ArtefactFactory::update()
         {
                 //Lembrar de verificar o dinheiro tb, claro.
-                if (artefactDefinitionSelected)
+                if (isSomeSelected)
                 {
                         if (Mouse::isButtonPressed(Mouse::Left))
                         {
@@ -37,14 +40,14 @@ namespace factory
                                         int tileSize = machine::MainGameState::TileSize();
                                         Vector2i ArtefactFactoryPosition(mousePosition.x-mousePosition.x%tileSize + tileSize/2, mousePosition.y-mousePosition.y%tileSize + tileSize/2);
                                         artefactDefinitionSelected->position = mouseBoardPosition;
-                                        //Artefact* newArtefact = ArtefactFactory::factory(artefactDefinitionSelected);
-                                        //newArtefact->init();
-                                        //newArtefact->load();
-                                        //machine::MainGameState::addGameActor(newArtefact);
+                                        Artefact* newArtefact = Factory(*artefactDefinitionSelected);
+                                        newArtefact->init();
+                                        newArtefact->load();
+                                        machine::MainGameState::AddGameActor(newArtefact);
 
                                         //Construo um novo artefato
                                         //O adiciono à lista de gameObjects
-                                        artefactDefinitionSelected = NULL;
+                                        //desselect();
                                 }
                         }
                 }
@@ -52,7 +55,7 @@ namespace factory
 #ifdef DEBUG_DRAW
         void ArtefactFactory::draw() const
         {
-                if (artefactDefinitionSelected )
+                if (isSomeSelected )
                 {
                         int ray = artefactDefinitionSelected->ray;
                         int tileSize = machine::MainGameState::TileSize();
@@ -77,9 +80,21 @@ namespace factory
                 }
         }
 #endif
-        void ArtefactFactory::setArtefactDefinition(actor::Artefact::ArtefactDefinition* newOne)
+
+        void ArtefactFactory::desselect()
         {
-                artefactDefinitionSelected = newOne;
+                isSomeSelected = false;
+                artefactDefinitionSelected = NULL;
+        }
+
+        void ArtefactFactory::select(unsigned char id)
+        {
+                artefactDefinitionIdSelected = id;
+                isSomeSelected = true;
+
+                artefactDefinitionSelected = new Artefact::ArtefactDefinition();
+                artefactDefinitionSelected->ray = 40;
+                //artefactDefinitionSelected = artefactDefinitionMap[id];
         }
 
         actor::Artefact* ArtefactFactory::Factory(const actor::Artefact::ArtefactDefinition& def)

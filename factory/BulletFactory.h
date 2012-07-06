@@ -9,7 +9,7 @@ namespace factory
         class BulletFactory
         {
                 private: //static attributes
-                        typedef std::map<unsigned char, actor::bullet::Bullet::BulletDefinition> BulletDefinitionMap;
+                        typedef std::map<unsigned char, actor::bullet::Bullet::BulletDefinition*> BulletDefinitionMap;
                 public: //static methods
                         static const actor::bullet::Bullet::BulletDefinition& GetBulletDefinnition(unsigned char);
                         static void LoadBulletDefinitions(); //Lê a partir do XML

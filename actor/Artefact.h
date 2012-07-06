@@ -27,13 +27,12 @@ namespace actor
                         Artefact(const ArtefactDefinition& def);
                         virtual ~Artefact();
                         virtual void upgrade();
+                        virtual void init();
+                        virtual void load();
                 protected:
                 private:
-                        virtual void init();
                         virtual void childUpdate(float deltaTime);
                         virtual void handleCollision(control::Collidable&);
-
-                        virtual void load();
                         virtual void unload();
                         void toAim();
 

@@ -498,7 +498,7 @@
 	"../factory/BulletFactory.h"
 	<stdio.h>
 
-1341532439 c:\users\guilherme m\documents\projetos\c++\towerdefense\actor\artefact.h
+1341548615 c:\users\guilherme m\documents\projetos\c++\towerdefense\actor\artefact.h
 	"GameActor.h"
 	"bullet/Bullet.h"
 
@@ -510,7 +510,7 @@
 	"Unit.h"
 	<string>
 
-1341546023 c:\users\guilherme m\documents\projetos\c++\towerdefense\factory\bulletfactory.h
+1341547944 c:\users\guilherme m\documents\projetos\c++\towerdefense\factory\bulletfactory.h
 	<map>
 	"../actor/bullet/Bullet.h"
 
@@ -544,11 +544,11 @@
 1341546937 c:\users\guilherme m\documents\projetos\c++\towerdefense\factory\artefactbuilder.h
 	"../actor/Artefact.h"
 
-1341547136 c:\users\guilherme m\documents\projetos\c++\towerdefense\factory\artefactfactory.h
+1341548149 c:\users\guilherme m\documents\projetos\c++\towerdefense\factory\artefactfactory.h
 	"../actor/Artefact.h"
 	<map>
 
-1341547157 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\factory\artefactfactory.cpp
+1341548634 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\factory\artefactfactory.cpp
 	"ArtefactFactory.h"
 	<SFML/Graphics.hpp>
 	"../control/Board.h"

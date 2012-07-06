@@ -9,7 +9,7 @@ namespace factory
         class ArtefactFactory
         {
                 private: //static attributes
-                        typedef std::map<unsigned char, actor::Artefact::ArtefactDefinition> ArtefactDefinitionMap;
+                        typedef std::map<unsigned char, actor::Artefact::ArtefactDefinition*> ArtefactDefinitionMap;
                 public: //static methods
                         static const actor::Artefact::ArtefactDefinition& GetArtefactDefinnition(unsigned char);
                         static void LoadArtefactDefinitions(); //Lê a partir do XML
@@ -23,12 +23,15 @@ namespace factory
                         ArtefactFactory();
                         virtual ~ArtefactFactory();
                         void update();
+                        void desselect();
 #ifdef DEBUG_DRAW
                         void draw() const;
 #endif
-                        void setArtefactDefinition(actor::Artefact::ArtefactDefinition*);
+                        void select(unsigned char);
                 protected:
                 private:
+                        bool isSomeSelected;
+                        unsigned char artefactDefinitionIdSelected;
                         actor::Artefact::ArtefactDefinition* artefactDefinitionSelected;
         };
 

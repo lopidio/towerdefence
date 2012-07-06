@@ -174,7 +174,7 @@ namespace machine
                 pathFinder.setBoard(&board);
                 pathFinder.setGoal(sf::Vector2f(5,2));
 
-                sf::Vector2i pos(2,6);
+                /*sf::Vector2i pos(2,6);
                 actor::Artefact::ArtefactDefinition def;
                 def.ray = 80;
                 def.position = pos;
@@ -190,11 +190,9 @@ namespace machine
                 ga = arte;
                 ga->init();
                 gameActorList.push_back(ga);
-                board.setCell(ga->getBoardPosition().y, ga->getBoardPosition().x, true);
+                board.setCell(ga->getBoardPosition().y, ga->getBoardPosition().x, true);*/
 
-                actor::Artefact::ArtefactDefinition* artDef = new actor::Artefact::ArtefactDefinition();
-                artDef->ray = 38;
-                artefactFactory.setArtefactDefinition(artDef);
+                artefactFactory.select(0); //ID do artefato selecionado
         }
 
         /** @brief GetGlobalAccess
