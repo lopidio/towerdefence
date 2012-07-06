@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="TowerDefense" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\TowerDefense" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\TowerDefense" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add option="-DDEBUG_DRAW" />
+			<Add directory="C:\Users\Guilherme M\Documents\Projetos\C++\Bibliotecas\SFML-2.0\include" />
+		</Compiler>
+		<Linker>
+			<Add library="C:\Users\Guilherme M\Documents\Projetos\C++\Bibliotecas\SFML-2.0\lib\libsfml-audio.a" />
+			<Add library="C:\Users\Guilherme M\Documents\Projetos\C++\Bibliotecas\SFML-2.0\lib\libsfml-graphics.a" />
+			<Add library="C:\Users\Guilherme M\Documents\Projetos\C++\Bibliotecas\SFML-2.0\lib\libsfml-main.a" />
+			<Add library="C:\Users\Guilherme M\Documents\Projetos\C++\Bibliotecas\SFML-2.0\lib\libsfml-system.a" />
+			<Add library="C:\Users\Guilherme M\Documents\Projetos\C++\Bibliotecas\SFML-2.0\lib\libsfml-window.a" />
+			<Add directory="C:\Users\Guilherme M\Documents\Projetos\C++\Bibliotecas\SFML-2.0\lib" />
+		</Linker>
+		<Unit filename="actor\Artefact.cpp" />
+		<Unit filename="actor\Artefact.h" />
+		<Unit filename="actor\GameActor.cpp" />
+		<Unit filename="actor\GameActor.h" />
+		<Unit filename="actor\Unit.cpp" />
+		<Unit filename="actor\Unit.h" />
+		<Unit filename="actor\bullet\Bullet.cpp" />
+		<Unit filename="actor\bullet\Bullet.h" />
+		<Unit filename="actor\bullet\InstantBullet.cpp" />
+		<Unit filename="actor\bullet\InstantBullet.h" />
+		<Unit filename="control\Board.cpp" />
+		<Unit filename="control\Board.h" />
+		<Unit filename="control\Collidable.cpp" />
+		<Unit filename="control\Collidable.h" />
+		<Unit filename="control\PathFinder.cpp" />
+		<Unit filename="control\PathFinder.h" />
+		<Unit filename="control\TimeMaster.cpp" />
+		<Unit filename="control\TimeMaster.h" />
+		<Unit filename="factory\BulletFactory.cpp" />
+		<Unit filename="factory\BulletFactory.h" />
+		<Unit filename="machine\GameMachine.cpp" />
+		<Unit filename="machine\GameMachine.h" />
+		<Unit filename="machine\GameState.cpp" />
+		<Unit filename="machine\GameState.h" />
+		<Unit filename="machine\MainGameState.cpp" />
+		<Unit filename="machine\MainGameState.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="manager\GridCollisionManager.cpp" />
+		<Unit filename="manager\GridCollisionManager.h" />
+		<Unit filename="manager\ResourceManager.h" />
+		<Unit filename="manager\TextureResourceManager.h" />
+		<Unit filename="util\Animation.cpp" />
+		<Unit filename="util\Animation.h" />
+		<Unit filename="util\Circle.cpp" />
+		<Unit filename="util\Circle.h" />
+		<Unit filename="util\Pair.h" />
+		<Unit filename="util\Util.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

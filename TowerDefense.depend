@@ -1,0 +1,545 @@
+# depslib dependency file v1.0
+1339997546 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\main.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	"machine/GameMachine.h"
+
+1331766416 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\graphics.hpp
+	<SFML/Window.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/RenderTexture.hpp>
+	<SFML/Graphics/RenderWindow.hpp>
+	<SFML/Graphics/Shader.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/CircleShape.hpp>
+	<SFML/Graphics/RectangleShape.hpp>
+	<SFML/Graphics/ConvexShape.hpp>
+	<SFML/Graphics/Sprite.hpp>
+	<SFML/Graphics/Text.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/Graphics/View.hpp>
+
+1331766416 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\window.hpp
+	<SFML/System.hpp>
+	<SFML/Window/Context.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/Window/Event.hpp>
+	<SFML/Window/Joystick.hpp>
+	<SFML/Window/Keyboard.hpp>
+	<SFML/Window/Mouse.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/Window.hpp>
+	<SFML/Window/WindowStyle.hpp>
+
+1331766416 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\system.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/Err.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/Lock.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/Sleep.hpp>
+	<SFML/System/String.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.hpp>
+	<SFML/System/Utf.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+
+1331766416 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\config.hpp
+
+1331678164 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\system\clock.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
+
+1331678164 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\system\export.hpp
+	<SFML/Config.hpp>
+
+1333749644 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\system\time.hpp
+	<SFML/System/Export.hpp>
+
+1333749250 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\system\err.hpp
+	<SFML/System/Export.hpp>
+	<ostream>
+
+1333490022 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\system\inputstream.hpp
+	<SFML/Config.hpp>
+
+1332879052 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\system\lock.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+
+1331678164 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\system\noncopyable.hpp
+	<SFML/System/Export.hpp>
+
+1331678164 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\system\mutex.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+
+1331678164 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\system\sleep.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
+
+1331678164 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\system\string.hpp
+	<SFML/System/Export.hpp>
+	<locale>
+	<string>
+
+1331678164 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\system\thread.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
+	<SFML/System/Thread.inl>
+
+1331678164 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\system\thread.inl
+
+1331678164 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\system\threadlocal.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
+
+1331678164 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\system\threadlocalptr.hpp
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.inl>
+
+1331678164 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\system\threadlocalptr.inl
+
+1331678164 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\system\utf.hpp
+	<SFML/Config.hpp>
+	<algorithm>
+	<locale>
+	<string>
+	<cstdlib>
+	<SFML/System/Utf.inl>
+
+1332015994 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\system\utf.inl
+
+1331678164 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\system\vector2.hpp
+	<SFML/System/Vector2.inl>
+
+1331678164 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\system\vector2.inl
+
+1331678164 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\system\vector3.hpp
+	<SFML/System/Vector3.inl>
+
+1331678166 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\system\vector3.inl
+
+1331678166 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\window\context.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/System/NonCopyable.hpp>
+
+1331678166 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\window\export.hpp
+	<SFML/Config.hpp>
+
+1331678166 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\window\glresource.hpp
+	<SFML/Window/Export.hpp>
+
+1331678166 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\window\contextsettings.hpp
+
+1331678166 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\window\event.hpp
+	<SFML/Config.hpp>
+	<SFML/Window/Joystick.hpp>
+	<SFML/Window/Keyboard.hpp>
+	<SFML/Window/Mouse.hpp>
+
+1331678166 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\window\joystick.hpp
+	<SFML/Window/Export.hpp>
+
+1331678166 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\window\keyboard.hpp
+	<SFML/Window/Export.hpp>
+
+1331678166 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\window\mouse.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector2.hpp>
+
+1332014150 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\window\videomode.hpp
+	<SFML/Window/Export.hpp>
+	<vector>
+
+1333588998 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\window\window.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<SFML/Window/WindowStyle.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<string>
+
+1331678166 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\window\windowhandle.hpp
+	<SFML/Config.hpp>
+
+1331678166 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\window\windowstyle.hpp
+
+1331678160 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\graphics\blendmode.hpp
+
+1331678160 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\graphics\color.hpp
+	<SFML/Graphics/Export.hpp>
+
+1331678160 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\graphics\export.hpp
+	<SFML/Config.hpp>
+
+1332014710 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\graphics\font.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/String.hpp>
+	<map>
+	<string>
+	<vector>
+
+1331678160 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\graphics\glyph.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+
+1332014184 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\graphics\rect.hpp
+	<SFML/System/Vector2.hpp>
+	<algorithm>
+	<SFML/Graphics/Rect.inl>
+
+1332014206 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\graphics\rect.inl
+
+1333829232 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\graphics\texture.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Window/GlResource.hpp>
+
+1333241394 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\graphics\image.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<string>
+	<vector>
+
+1332014756 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\graphics\renderstates.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/Transform.hpp>
+
+1331678162 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\graphics\transform.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/System/Vector2.hpp>
+
+1331678160 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\graphics\rendertexture.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+
+1332879398 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\graphics\rendertarget.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/View.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/System/NonCopyable.hpp>
+
+1331678162 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\graphics\view.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/System/Vector2.hpp>
+
+1331678160 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\graphics\primitivetype.hpp
+
+1332015014 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\graphics\vertex.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/System/Vector2.hpp>
+
+1333588946 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\graphics\renderwindow.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Window/Window.hpp>
+	<string>
+
+1331678162 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\graphics\shader.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+	<map>
+	<string>
+
+1331678160 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\graphics\shape.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/System/Vector2.hpp>
+
+1333588928 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\graphics\drawable.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+
+1331678162 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\graphics\transformable.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Transform.hpp>
+
+1332879022 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\graphics\vertexarray.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<vector>
+
+1331678160 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\graphics\circleshape.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
+
+1331678160 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\graphics\rectangleshape.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
+
+1331678160 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\graphics\convexshape.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<vector>
+
+1331678160 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\graphics\sprite.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/Rect.hpp>
+
+1331678160 c:\users\guilherme m\documents\projetos\c++\bibliotecas\sfml-2.0\include\sfml\graphics\text.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/System/String.hpp>
+	<string>
+	<vector>
+
+1341442999 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\machine\gamemachine.cpp
+	"GameMachine.h"
+	"MainGameState.h"
+	<iostream>
+
+1341442985 c:\users\guilherme m\documents\projetos\c++\towerdefense\machine\gamemachine.h
+	<SFML/Graphics.hpp>
+	"GameState.h"
+	"../manager/TextureResourceManager.h"
+	<stack>
+
+1339389243 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\machine\gamestate.cpp
+	"GameState.h"
+
+1339389760 c:\users\guilherme m\documents\projetos\c++\towerdefense\machine\gamestate.h
+
+1341525673 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\machine\maingamestate.cpp
+	"MainGameState.h"
+	"../actor/Unit.h"
+	"../actor/Artefact.h"
+	<iostream>
+
+1341534954 c:\users\guilherme m\documents\projetos\c++\towerdefense\machine\maingamestate.h
+	<SFML/Graphics.hpp>
+	<list>
+	"GameState.h"
+	"GameMachine.h"
+	"../actor/GameActor.h"
+	"../manager/GridCollisionManager.h"
+	"../control/TimeMaster.h"
+	"../control/PathFinder.h"
+	"../factory/ArtefactBuilder.h"
+
+1339389778 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\control\timemaster.cpp
+	"TimeMaster.h"
+
+1339389292 c:\users\guilherme m\documents\projetos\c++\towerdefense\control\timemaster.h
+	<SFML/System.hpp>
+
+1341358866 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\util\animation.cpp
+	"Animation.h"
+	"Util.h"
+
+1341358839 c:\users\guilherme m\documents\projetos\c++\towerdefense\util\animation.h
+	<SFML/Graphics.hpp>
+
+1341356581 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\control\pathfinder.cpp
+	"PathFinder.h"
+	"../util/Util.h"
+
+1339714937 c:\users\guilherme m\documents\projetos\c++\towerdefense\control\pathfinder.h
+	<SFML/Graphics.hpp>
+	"Board.h"
+	"../actor/Unit.h"
+	<list>
+	<math.h>
+
+1339547927 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\manager\resourcemanager.cpp
+
+1339646707 c:\users\guilherme m\documents\projetos\c++\towerdefense\manager\resourcemanager.h
+	<cstring>
+	<map>
+	<iostream>
+
+1339548237 c:\users\guilherme m\documents\projetos\c++\towerdefense\manager\resource.h
+	"ResourceManager.h"
+	<cstring>
+
+1339457233 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\control\board.cpp
+	"Board.h"
+
+1339456796 c:\users\guilherme m\documents\projetos\c++\towerdefense\control\board.h
+
+1341460650 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\actor\gameactor.cpp
+	"GameActor.h"
+	"../machine/GameMachine.h"
+	"../machine/MainGameState.h"
+
+1341358441 c:\users\guilherme m\documents\projetos\c++\towerdefense\actor\gameactor.h
+	<SFML/Graphics.hpp>
+	"../util/Animation.h"
+	"../util/Circle.h"
+	"../control/Collidable.h"
+	<iostream>
+
+1339466406 c:\users\guilherme m\documents\projetos\c++\towerdefense\util\circle.h
+	<SFML/Graphics.hpp>
+
+1339736742 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\util\circle.cpp
+	"Circle.h"
+	"Util.h"
+
+1341461807 c:\users\guilherme m\documents\projetos\c++\towerdefense\control\collidable.h
+	"../util/Circle.h"
+
+1339737284 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\control\collidable.cpp
+	"Collidable.h"
+
+1339513597 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\control\gridcollisionmanager.cpp
+	"GridCollisionManager.h"
+	"../machine/GameMachine.h"
+	<cmath>
+
+1339466861 c:\users\guilherme m\documents\projetos\c++\towerdefense\control\gridcollisionmanager.h
+	<set>
+	"../util/Pair.h"
+	"Collidable.h"
+
+1339713492 c:\users\guilherme m\documents\projetos\c++\towerdefense\util\pair.h
+
+1341530657 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\actor\unit.cpp
+	"Unit.h"
+	<iostream>
+	<stdio.h>
+	"../machine/MainGameState.h"
+	"../util/Util.h"
+
+1341530615 c:\users\guilherme m\documents\projetos\c++\towerdefense\actor\unit.h
+	"GameActor.h"
+	"../control/PathFinder.h"
+	<SFML/Graphics.hpp>
+	<list>
+	<vector>
+
+1339548388 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\manager\textureresourcemanager.cpp
+
+1339567833 c:\users\guilherme m\documents\projetos\c++\towerdefense\manager\textureresourcemanager.h
+	"ResourceManager.h"
+	<SFML/Graphics.hpp>
+
+1341463698 c:\users\guilherme m\documents\projetos\c++\towerdefense\manager\gridcollisionmanager.h
+	<list>
+	<set>
+	"../util/Pair.h"
+	"../control/Collidable.h"
+
+1341530493 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\manager\gridcollisionmanager.cpp
+	"GridCollisionManager.h"
+	"../machine/GameMachine.h"
+	"../machine/MainGameState.h"
+	"../util/Util.h"
+	"../util/Circle.h"
+	<cmath>
+	<stdio.h>
+
+1341281650 c:\users\guilherme m\documents\projetos\c++\towerdefense\util\util.h
+	<SFML/Graphics.hpp>
+	<list>
+	<math.h>
+	"Circle.h"
+
+1339679498 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\util\util.cpp
+	"Util.h"
+
+1341532449 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\actor\artefact.cpp
+	"Artefact.h"
+	"../machine/MainGameState.h"
+	"../factory/BulletFactory.h"
+	<stdio.h>
+
+1341532439 c:\users\guilherme m\documents\projetos\c++\towerdefense\actor\artefact.h
+	"GameActor.h"
+	"bullet/Bullet.h"
+
+1341440777 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\actor\bullet.cpp
+	"Bullet.h"
+
+1341441589 c:\users\guilherme m\documents\projetos\c++\towerdefense\actor\bullet.h
+	"GameActor.h"
+	"Unit.h"
+	<string>
+
+1341458326 c:\users\guilherme m\documents\projetos\c++\towerdefense\factory\bulletfactory.h
+	<map>
+	"../actor/bullet/Bullet.h"
+
+1341461071 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\factory\bulletfactory.cpp
+	"BulletFactory.h"
+	"../actor/bullet/InstantBullet.h"
+
+1341461949 c:\users\guilherme m\documents\projetos\c++\towerdefense\actor\bullet\bullet.h
+	"../GameActor.h"
+	"../Unit.h"
+	<string>
+
+1341461844 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\actor\bullet\bullet.cpp
+	"Bullet.h"
+
+1341530258 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\actor\bullet\instantbullet.cpp
+	"InstantBullet.h"
+	"../../machine/MainGameState.h"
+	<stdio.h>
+
+1341463904 c:\users\guilherme m\documents\projetos\c++\towerdefense\actor\bullet\instantbullet.h
+	"Bullet.h"
+
+1341533999 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\factory\artefactbuilder.cpp
+	"ArtefactBuilder.h"
+	<SFML/Graphics.hpp>
+	"../control/Board.h"
+	"../machine/MainGameState.h"
+
+1341532862 c:\users\guilherme m\documents\projetos\c++\towerdefense\factory\artefactbuilder.h
+	"../actor/Artefact.h"
+
