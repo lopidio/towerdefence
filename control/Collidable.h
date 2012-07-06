@@ -17,6 +17,7 @@ namespace control
                                 ECollidableTypeAirBullet          = 1 << 2,
                                 ECollidableTypeTerresterBullet    = 1 << 3,
                                 ECollidableTypeArtefact           = 1 << 4,
+                                ECollidableTypeInfoViewer         = 1 << 5
                         };
                 public:
                         Collidable();

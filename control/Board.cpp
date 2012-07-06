@@ -2,6 +2,7 @@
 //***************
 //  - Lopidio
 #include "Board.h"
+#include <stdio.h>
 
 namespace control
 {

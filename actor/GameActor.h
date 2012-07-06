@@ -30,6 +30,7 @@ namespace actor
                         static bool ZIndexComparator(const GameActor* lhs, const GameActor* rhs);
                         bool isAlive() const;
                         const sf::Vector2f & getPosition() const;
+                        sf::Vector2i getBoardPosition() const;
                 protected:
                         virtual void childUpdate(float deltaTime);
                 protected:

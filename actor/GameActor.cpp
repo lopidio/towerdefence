@@ -125,4 +125,8 @@ namespace actor
         {
                 return alive;
         }
+        sf::Vector2i GameActor::getBoardPosition() const
+        {
+                return machine::MainGameState::TransformToTilePosition(getPosition());
+        }
 }

@@ -12,8 +12,9 @@ namespace factory
                         virtual ~ArtefactBuilder();
                         void update();
 #ifdef DEBUG_DRAW
-                        void draw();
+                        void draw() const;
 #endif
+                        void setArtefactDefinition(actor::Artefact::ArtefactDefinition*);
                 protected:
                 private:
                         actor::Artefact::ArtefactDefinition* artefactDefinitionSelected;

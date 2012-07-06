@@ -83,8 +83,6 @@ namespace actor
                 //Chama o init da superclasse
                 GameActor::init();
 
-                printf("Unit address:%p\n", this);
-
                 animationsFileName[EUnitOrientationWalkingRight] = "resources/textures/units/RightBomberUnit.png";
                 animationsFileName[EUnitOrientationWalkingLeft] = "resources/textures/units/LeftBomberUnit.png";
                 animationsFileName[EUnitOrientationWalkingUp] = "resources/textures/units/UpBomberUnit.png";

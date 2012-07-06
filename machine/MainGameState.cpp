@@ -17,7 +17,7 @@ namespace machine
                 timeMaster(),
                 pathFinder(),
                 tileSize(32),
-                board(18,12),
+                board(16,20), //Linhas, colunas
                 artefactBuilder()
         {
         }
@@ -46,6 +46,10 @@ namespace machine
                 for (GameActorList::const_iterator it = gameActorList.begin(); it != gameActorList.end(); ++it)
                         (*it)->draw();
 
+#ifdef DEBUG_DRAW
+                artefactBuilder.draw();
+#endif
+
                 //desenhar a GUI
         }
 
@@ -60,6 +64,8 @@ namespace machine
                 timeMaster.restart();
                 if (deltaTime >= 0.2)//Dar valores máximos
                         deltaTime = 0.2;
+
+                artefactBuilder.update();
                 for (GameActorList::iterator it = gameActorList.begin(); it != gameActorList.end(); ++it)
                 {
                         (*it)->update(deltaTime);
@@ -165,25 +171,30 @@ namespace machine
                 unit->setPath(c2);
                 gameActorList.push_back(unit);
 
-                pathFinder.setBoard(NULL);
-                pathFinder.setGoal(sf::Vector2f(0,1));
+                pathFinder.setBoard(&board);
+                pathFinder.setGoal(sf::Vector2f(5,2));
 
-                sf::Vector2i pos(1,2);
+                sf::Vector2i pos(2,6);
                 actor::Artefact::ArtefactDefinition def;
-                def.ray;
+                def.ray = 80;
                 def.position = pos;
                 actor::Artefact* arte;
                 arte = new actor::Artefact(def);
                 ga = arte;
                 ga->init();
                 gameActorList.push_back(ga);
+                board.setCell(ga->getBoardPosition().y, ga->getBoardPosition().x, true);
 
-                def.position = sf::Vector2i(3,0);
+                def.position = sf::Vector2i(4,2);
                 arte = new actor::Artefact(def);
                 ga = arte;
                 ga->init();
                 gameActorList.push_back(ga);
+                board.setCell(ga->getBoardPosition().y, ga->getBoardPosition().x, true);
 
+                actor::Artefact::ArtefactDefinition* artDef = new actor::Artefact::ArtefactDefinition();
+                artDef->ray = 38;
+                artefactBuilder.setArtefactDefinition(artDef);
         }
 
         /** @brief GetGlobalAccess
@@ -209,10 +220,6 @@ namespace machine
         {
                 //retorno
                 sf::Vector2i tilePosition = sf::Vector2i(position);
-                //Centraliza a unidade no centro da tile
-                tilePosition.x += globalInstance->tileSize/2;
-                tilePosition.y += globalInstance->tileSize/2;
-
                 //Calcula a posição em tiles
                 tilePosition.x /= globalInstance->tileSize;
                 tilePosition.y /= globalInstance->tileSize;

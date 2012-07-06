@@ -338,12 +338,12 @@
 	<string>
 	<vector>
 
-1341442999 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\machine\gamemachine.cpp
+1341538532 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\machine\gamemachine.cpp
 	"GameMachine.h"
 	"MainGameState.h"
 	<iostream>
 
-1341442985 c:\users\guilherme m\documents\projetos\c++\towerdefense\machine\gamemachine.h
+1341538507 c:\users\guilherme m\documents\projetos\c++\towerdefense\machine\gamemachine.h
 	<SFML/Graphics.hpp>
 	"GameState.h"
 	"../manager/TextureResourceManager.h"
@@ -354,13 +354,12 @@
 
 1339389760 c:\users\guilherme m\documents\projetos\c++\towerdefense\machine\gamestate.h
 
-1341525673 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\machine\maingamestate.cpp
+1341541014 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\machine\maingamestate.cpp
 	"MainGameState.h"
 	"../actor/Unit.h"
 	"../actor/Artefact.h"
-	<iostream>
 
-1341534954 c:\users\guilherme m\documents\projetos\c++\towerdefense\machine\maingamestate.h
+1341534977 c:\users\guilherme m\documents\projetos\c++\towerdefense\machine\maingamestate.h
 	<SFML/Graphics.hpp>
 	<list>
 	"GameState.h"
@@ -406,17 +405,18 @@
 	"ResourceManager.h"
 	<cstring>
 
-1339457233 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\control\board.cpp
+1341541348 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\control\board.cpp
 	"Board.h"
+	<stdio.h>
 
 1339456796 c:\users\guilherme m\documents\projetos\c++\towerdefense\control\board.h
 
-1341460650 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\actor\gameactor.cpp
+1341541300 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\actor\gameactor.cpp
 	"GameActor.h"
 	"../machine/GameMachine.h"
 	"../machine/MainGameState.h"
 
-1341358441 c:\users\guilherme m\documents\projetos\c++\towerdefense\actor\gameactor.h
+1341539541 c:\users\guilherme m\documents\projetos\c++\towerdefense\actor\gameactor.h
 	<SFML/Graphics.hpp>
 	"../util/Animation.h"
 	"../util/Circle.h"
@@ -430,7 +430,7 @@
 	"Circle.h"
 	"Util.h"
 
-1341461807 c:\users\guilherme m\documents\projetos\c++\towerdefense\control\collidable.h
+1341537648 c:\users\guilherme m\documents\projetos\c++\towerdefense\control\collidable.h
 	"../util/Circle.h"
 
 1339737284 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\control\collidable.cpp
@@ -448,7 +448,7 @@
 
 1339713492 c:\users\guilherme m\documents\projetos\c++\towerdefense\util\pair.h
 
-1341530657 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\actor\unit.cpp
+1341538006 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\actor\unit.cpp
 	"Unit.h"
 	<iostream>
 	<stdio.h>
@@ -534,12 +534,13 @@
 1341463904 c:\users\guilherme m\documents\projetos\c++\towerdefense\actor\bullet\instantbullet.h
 	"Bullet.h"
 
-1341533999 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\factory\artefactbuilder.cpp
+1341541500 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\factory\artefactbuilder.cpp
 	"ArtefactBuilder.h"
 	<SFML/Graphics.hpp>
 	"../control/Board.h"
 	"../machine/MainGameState.h"
+	<stdio.h>
 
-1341532862 c:\users\guilherme m\documents\projetos\c++\towerdefense\factory\artefactbuilder.h
+1341538063 c:\users\guilherme m\documents\projetos\c++\towerdefense\factory\artefactbuilder.h
 	"../actor/Artefact.h"
 

@@ -25,6 +25,7 @@ namespace machine
                         void popState();
                         void run();
                         static manager::TextureResourceManager& TextureResourceManager();
+                        static const sf::RenderWindow& Window();
                 private: //Instance members
                         void init();
                         void load();

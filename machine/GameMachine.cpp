@@ -157,4 +157,9 @@ namespace machine
         {
                 return GetInstance()->textureResourceManager;
         }
+
+        const sf::RenderWindow& GameMachine::Window()
+        {
+                return GetInstance()->renderWindow;
+        }
 }
