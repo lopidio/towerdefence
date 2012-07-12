@@ -37,17 +37,23 @@ namespace factory
                         Vector2i mouseBoardPosition = machine::MainGameState::TransformToTilePosition(Vector2f(mousePosition));
                                 if (!machine::MainGameState::GetBoard().getCell(mouseBoardPosition.y, mouseBoardPosition.x))//Verifica se o tabuleiro está livre
                                 {
-                                        int tileSize = machine::MainGameState::TileSize();
-                                        Vector2i ArtefactFactoryPosition(mousePosition.x-mousePosition.x%tileSize + tileSize/2, mousePosition.y-mousePosition.y%tileSize + tileSize/2);
-                                        artefactDefinitionSelected->position = mouseBoardPosition;
-                                        Artefact* newArtefact = Factory(*artefactDefinitionSelected);
-                                        newArtefact->init();
-                                        newArtefact->load();
-                                        machine::MainGameState::AddGameActor(newArtefact);
+                                        machine::MainGameState::GetBoard().setCell(mouseBoardPosition.y, mouseBoardPosition.x, true);//Ocupo o tabuleiro para o cálculo
+                                        if (machine::MainGameState::GetPathFinder().isPossibleBuildPath(sf::Vector2f(mouseBoardPosition)))//Se for possível criar um novo caminho com esse artefato
+                                        {
+                                                //Construo um novo artefato
+                                                artefactDefinitionSelected->position = mouseBoardPosition;
+                                                Artefact* newArtefact = Factory(*artefactDefinitionSelected);
+                                                newArtefact->init();
+                                                newArtefact->load();
+                                                machine::MainGameState::AddGameActor(newArtefact);
 
-                                        //Construo um novo artefato
-                                        //O adiciono à lista de gameObjects
-                                        //desselect();
+                                                //Aviso ao MAinGameState pra recarregar todos os caminhos das unidades
+                                                //desselect();
+                                        }
+                                        else
+                                        {
+                                                machine::MainGameState::GetBoard().setCell(mouseBoardPosition.y, mouseBoardPosition.x, false);//Descupo o tabuleiro para o cálculo
+                                        }
                                 }
                         }
                 }
@@ -69,7 +75,6 @@ namespace factory
                                 sf::CircleShape c(ray);
                                 c.setPosition(ArtefactFactoryPosition.x - ray, ArtefactFactoryPosition.y - ray);
                                 c.setFillColor(sf::Color::White);
-
                                 machine::GameMachine::Draw(c);
 
                                 RectangleShape r(sf::Vector2f(machine::MainGameState::TileSize(), machine::MainGameState::TileSize()));

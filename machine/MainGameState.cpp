@@ -15,7 +15,7 @@ namespace machine
                 gameActorList(),
                 collisionManager(sf::Vector2i(128,128), sf::Vector2i(640,420)), //Tamanho de (2x2) grid, e tamanho do tabuleiro
                 timeMaster(),
-                pathFinder(),
+                pathFinder(sf::Vector2f(0,0),sf::Vector2f(15,19)),
                 tileSize(32),
                 board(16,20), //Linhas, colunas
                 artefactFactory()
@@ -40,6 +40,7 @@ namespace machine
         {
 #ifdef DEBUG_DRAW
                 collisionManager.draw();
+                pathFinder.draw();
 #endif
 
                 //Percorre de trás para frente (por conta da ordenação contrária)
@@ -88,7 +89,10 @@ namespace machine
                 for (GameActorList::iterator it = gameActorList.begin(); it != gameActorList.end();)
                 {
                         if(!(*it)->isAlive())
+                        {
+                                delete *it;
                                 it = gameActorList.erase(it);
+                        }
                         else
                                 ++it;
                 }
@@ -172,7 +176,6 @@ namespace machine
                 gameActorList.push_back(unit);
 
                 pathFinder.setBoard(&board);
-                pathFinder.setGoal(sf::Vector2f(5,2));
 
                 /*sf::Vector2i pos(2,6);
                 actor::Artefact::ArtefactDefinition def;
@@ -252,4 +255,8 @@ namespace machine
                 return globalInstance->board;
         }
 
+        control::PathFinder& MainGameState::GetPathFinder()
+        {
+                return globalInstance->pathFinder;
+        }
 }

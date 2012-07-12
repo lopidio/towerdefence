@@ -354,12 +354,12 @@
 
 1339389760 c:\users\guilherme m\documents\projetos\c++\towerdefense\machine\gamestate.h
 
-1341544339 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\machine\maingamestate.cpp
+1341631353 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\machine\maingamestate.cpp
 	"MainGameState.h"
 	"../actor/Unit.h"
 	"../actor/Artefact.h"
 
-1341547243 c:\users\guilherme m\documents\projetos\c++\towerdefense\machine\maingamestate.h
+1342062321 c:\users\guilherme m\documents\projetos\c++\towerdefense\machine\maingamestate.h
 	<SFML/Graphics.hpp>
 	<list>
 	"GameState.h"
@@ -383,14 +383,16 @@
 1341358839 c:\users\guilherme m\documents\projetos\c++\towerdefense\util\animation.h
 	<SFML/Graphics.hpp>
 
-1341356581 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\control\pathfinder.cpp
+1342062254 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\control\pathfinder.cpp
 	"PathFinder.h"
-	"../util/Util.h"
+	"../machine/MainGameState.h"
+	<stdio.h>
 
-1339714937 c:\users\guilherme m\documents\projetos\c++\towerdefense\control\pathfinder.h
+1342062258 c:\users\guilherme m\documents\projetos\c++\towerdefense\control\pathfinder.h
 	<SFML/Graphics.hpp>
 	"Board.h"
 	"../actor/Unit.h"
+	"../util/Util.h"
 	<list>
 	<math.h>
 
@@ -405,11 +407,11 @@
 	"ResourceManager.h"
 	<cstring>
 
-1341541348 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\control\board.cpp
+1342060504 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\control\board.cpp
 	"Board.h"
 	<stdio.h>
 
-1339456796 c:\users\guilherme m\documents\projetos\c++\towerdefense\control\board.h
+1342060478 c:\users\guilherme m\documents\projetos\c++\towerdefense\control\board.h
 
 1341541300 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\actor\gameactor.cpp
 	"GameActor.h"
@@ -483,7 +485,7 @@
 	<cmath>
 	<stdio.h>
 
-1341281650 c:\users\guilherme m\documents\projetos\c++\towerdefense\util\util.h
+1342061967 c:\users\guilherme m\documents\projetos\c++\towerdefense\util\util.h
 	<SFML/Graphics.hpp>
 	<list>
 	<math.h>
@@ -492,7 +494,7 @@
 1339679498 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\util\util.cpp
 	"Util.h"
 
-1341544926 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\actor\artefact.cpp
+1341631429 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\actor\artefact.cpp
 	"Artefact.h"
 	"../machine/MainGameState.h"
 	"../factory/BulletFactory.h"
@@ -548,7 +550,7 @@
 	"../actor/Artefact.h"
 	<map>
 
-1341548634 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\factory\artefactfactory.cpp
+1342062431 source:c:\users\guilherme m\documents\projetos\c++\towerdefense\factory\artefactfactory.cpp
 	"ArtefactFactory.h"
 	<SFML/Graphics.hpp>
 	"../control/Board.h"

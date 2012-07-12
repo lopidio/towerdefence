@@ -56,7 +56,7 @@ namespace control
           *
           * @todo: document this function
           */
-        int Board::getNumColunas() const
+        unsigned int Board::getNumColunas() const
         {
                 return numColunas;
         }
@@ -65,9 +65,29 @@ namespace control
           *
           * @todo: document this function
           */
-        int Board::getNumLinhas() const
+        unsigned int Board::getNumLinhas() const
         {
                 return numLinhas;
+        }
+        unsigned int Board::getNumCells() const
+        {
+                return numColunas*numLinhas;
+        }
+        unsigned int Board::getNumBlockedCells() const
+        {
+                int resultado = 0;
+                for (int i = 0; i < numLinhas; ++i)
+                        for (int j = 0; j < numColunas; ++j)
+                                resultado += matrix[i][j];
+                return resultado;
+        }
+        unsigned int Board::getNumFreeCells() const
+        {
+                int resultado = getNumCells();
+                for (int i = 0; i < numLinhas; ++i)
+                        for (int j = 0; j < numColunas; ++j)
+                                resultado -= matrix[i][j];
+                return resultado;
         }
 
 

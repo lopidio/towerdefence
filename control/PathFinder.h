@@ -4,6 +4,8 @@
 #include <SFML/Graphics.hpp>
 #include "Board.h"
 #include "../actor/Unit.h"
+#include "../util/Util.h"
+
 #include <list>
 #include <math.h>
 
@@ -30,23 +32,37 @@ namespace control
                 typedef std::list<PathNode> PathNodeList;
 
                 public:
-                        PathFinder();
+                        PathFinder(const sf::Vector2f& startPoint_, const sf::Vector2f& endPoint_);
                         virtual ~PathFinder();
-                        Path getPathFromUnit(const actor::Unit& unit);
+                        Path buildPathFromUnit(const actor::Unit& unit);
+                        bool isPossibleBuildPath(const sf::Vector2f& point) const;
+                        const Path& getDefaultPath() const;
+                        bool buildDefaultPath();
                         void setBoard(const Board* board_);
                         const Board* getBoard() const;
-                        void setGoal(const Vector2f& goal_);
+                        void setEndPoint(const Vector2f& endPoint_);
+                        const sf::Vector2f& getEndPoint() const;
                         const Vector2f& getGoal() const;
+#ifdef DEBUG_DRAW
+                        void draw() const;
+#endif
                 protected:
                 private:
-                        Path construirRetorno(PathNode& first);
-                        Path iterate(bool flies);
+                        template<typename T> static int DummyDistance(const sf::Vector2<T>& v1, const sf::Vector2<T>& v2)
+                        {
+                                return util::Util::Absolute(v1.x - v2.x) + util::Util::Absolute(v1.y - v2.y);
+                        }
+                        void check(const sf::Vector2f& pos, std::list<sf::Vector2f>& visited, std::list<sf::Vector2f>& toVisit) const;
+                        Path construirRetorno(PathNode first);
+                        Path iterate(bool flies = false);
                         void analisarPosicao(const Vector2f& posicao, int custo, const PathNode* pai, bool flies);
                         static PathNode PegarMenor(const PathNodeList& lista);
 
                         //Atributos
                         const Board* board;
-                        Vector2f goal;
+                        Vector2f endPoint;
+                        Vector2f startPoint;
+                        Path defaultPath;
                         PathNodeList visitados;
                         PathNodeList paraVisitar;
         };

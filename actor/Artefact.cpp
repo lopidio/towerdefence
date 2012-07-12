@@ -138,8 +138,6 @@ namespace actor
                 animationsFileName[EArtefactAnimationBuilding] = "resources/textures/artefacts/bomb.png";
                 animationsFileName[EArtefactAnimationReloading] = "resources/textures/artefacts/bomb.png";
                 animationsFileName[EArtefactAnimationShooting] = "resources/textures/artefacts/bomb.png";
-
-                machine::MainGameState::GetBoard().setCell(getBoardPosition().y, getBoardPosition().x, true);
         }
 
         void Artefact::upgrade()

@@ -24,6 +24,14 @@ namespace util
                                         return true;
                         return false;
                 }
+                template <typename T> static bool Find(const std::list<T>& list, const T& x)
+                {
+                        for (typename std::list<T>::const_iterator it = list.begin(); it != list.end() ; ++it)
+                                if (*it == x)
+                                        return true;
+                        return false;
+                }
+
                 template <typename T> static bool Remove(std::list<T>& list, const T& node)
                 {
                         typename std::list<T>::iterator it = list.begin();

@@ -60,8 +60,8 @@
 		<Unit filename="control\PathFinder.h" />
 		<Unit filename="control\TimeMaster.cpp" />
 		<Unit filename="control\TimeMaster.h" />
-		<Unit filename="factory\ArtefactBuilder.cpp" />
-		<Unit filename="factory\ArtefactBuilder.h" />
+		<Unit filename="factory\ArtefactFactory.cpp" />
+		<Unit filename="factory\ArtefactFactory.h" />
 		<Unit filename="factory\BulletFactory.cpp" />
 		<Unit filename="factory\BulletFactory.h" />
 		<Unit filename="machine\GameMachine.cpp" />

@@ -35,6 +35,7 @@ namespace machine
                         static manager::GridCollisionManager& GridCollisionManager();
                         static void AddGameActor(actor::GameActor* gameActor);
                         static control::Board& GetBoard();
+                        static control::PathFinder& GetPathFinder();
                 protected:
                         void removeDeadGameActor();
                 private:

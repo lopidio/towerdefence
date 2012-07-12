@@ -11,8 +11,11 @@ namespace control
                         virtual ~Board();
                         bool getCell(int linha, int coluna) const;
                         void setCell(int linha, int coluna, bool newValue);
-                        int getNumLinhas() const;
-                        int getNumColunas() const;
+                        unsigned int getNumLinhas() const;
+                        unsigned int getNumColunas() const;
+                        unsigned int getNumCells() const;
+                        unsigned int getNumBlockedCells() const;
+                        unsigned int getNumFreeCells() const;
                 protected:
                 private:
                         bool **matrix;
